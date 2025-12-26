@@ -17,10 +17,7 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#3B82F6' },
-    { media: '(prefers-color-scheme: dark)', color: '#3B82F6' },
-  ],
+  themeColor: '#3B82F6', // NFTPD Blue for iOS Dynamic Island
 };
 
 export const metadata: Metadata = {
@@ -61,11 +58,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <head>
-        {/* Manual theme-color meta tag for maximum iOS compatibility */}
-        <meta name="theme-color" content="#3B82F6" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="#3B82F6" media="(prefers-color-scheme: dark)" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-white min-h-screen relative`}
         style={{ background: 'radial-gradient(circle at center, #080d1a 0%, #000 100%)' }}
