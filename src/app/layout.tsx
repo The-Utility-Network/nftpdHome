@@ -16,6 +16,28 @@ export const metadata: Metadata = {
   title: 'NFTPD | Decentralized Web Security & Intelligence',
   description: 'Protecting the decentralized web through education, vigilance, and superior security technology. Home of the Web3 Security Codex.',
   keywords: 'Web3 security, NFT protection, blockchain forensics, smart contract audit, crypto security training',
+
+  // iOS Dynamic Island & Status Bar
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#3B82F6' },
+    { media: '(prefers-color-scheme: dark)', color: '#3B82F6' },
+  ],
+
+  // Mobile optimizations
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true,
+  },
+
+  // Apple Web App
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'NFTPD',
+  },
+
   openGraph: {
     title: 'NFTPD | Web3 Security Intelligence',
     description: 'The standard for decentralized web security.',
@@ -42,6 +64,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        {/* Manual theme-color meta tag for maximum iOS compatibility */}
+        <meta name="theme-color" content="#3B82F6" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#3B82F6" media="(prefers-color-scheme: dark)" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-white min-h-screen relative`}
         style={{ background: 'radial-gradient(circle at center, #080d1a 0%, #000 100%)' }}
