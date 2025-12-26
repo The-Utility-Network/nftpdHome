@@ -10,6 +10,7 @@ const navLinks = [
     { label: 'CODEX', href: '/codex' },
     { label: 'DOCS', href: '/documents' },
     { label: 'GLOSSARY', href: '/definitions' },
+    { label: 'CONTACT', href: '/contact-security' },
 ];
 
 export default function Navbar({ themeColor: propsThemeColor }: { themeColor?: string }) {
