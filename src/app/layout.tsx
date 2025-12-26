@@ -12,24 +12,21 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: 'NFTPD | Decentralized Web Security & Intelligence',
-  description: 'Protecting the decentralized web through education, vigilance, and superior security technology. Home of the Web3 Security Codex.',
-  keywords: 'Web3 security, NFT protection, blockchain forensics, smart contract audit, crypto security training',
-
-  // iOS Dynamic Island & Status Bar
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#3B82F6' },
     { media: '(prefers-color-scheme: dark)', color: '#3B82F6' },
   ],
+};
 
-  // Mobile optimizations
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
+export const metadata: Metadata = {
+  title: 'NFTPD | Decentralized Web Security & Intelligence',
+  description: 'Protecting the decentralized web through education, vigilance, and superior security technology. Home of the Web3 Security Codex.',
+  keywords: 'Web3 security, NFT protection, blockchain forensics, smart contract audit, crypto security training',
 
   // Apple Web App
   appleWebApp: {
