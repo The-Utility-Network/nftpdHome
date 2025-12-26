@@ -12,11 +12,11 @@ const navLinks = [
     { label: 'GLOSSARY', href: '/definitions' },
 ];
 
-export default function Navbar() {
+export default function Navbar({ themeColor: propsThemeColor }: { themeColor?: string }) {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [time, setTime] = useState('');
-    const themeColor = '#3B82F6'; // NFTPD Blue
+    const themeColor = propsThemeColor || '#3B82F6'; // Use prop or default NFTPD Blue
 
     useEffect(() => {
         const handleScroll = () => {
@@ -94,7 +94,7 @@ export default function Navbar() {
                             className="text-xs font-mono tracking-wider px-6 py-3 rounded font-black hover:opacity-90 transition-all shadow-[0_0_15px_rgba(59,130,246,0.3)]"
                             style={{ backgroundColor: themeColor, color: '#000' }}
                         >
-                            GET PROTECTED
+                            VISIT PORTAL
                         </Link>
 
                         {/* Mobile Menu Button */}
@@ -134,7 +134,7 @@ export default function Navbar() {
                                 className="mt-2 px-4 py-3 text-xs font-mono tracking-wider font-black rounded transition-all"
                                 style={{ backgroundColor: themeColor, color: '#000' }}
                             >
-                                GET PROTECTED
+                                VISIT PORTAL
                             </Link>
                         </div>
                     </div>
