@@ -70,9 +70,14 @@ export default function Footer() {
                 </div>
 
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-[10px] font-mono text-gray-600 uppercase tracking-widest">
-                        © {new Date().getFullYear()} NFTPD. | SECURITY BY DESIGN.
-                    </p>
+                    <div className="flex flex-col gap-1 items-center md:items-start">
+                        <p className="text-[10px] font-mono text-gray-600 uppercase tracking-widest">
+                            © {new Date().getFullYear()} NFTPD. | SECURITY BY DESIGN.
+                        </p>
+                        <p className="text-[10px] font-mono text-gray-600 uppercase tracking-widest">
+                            An Endeavor of <LinkNext href="https://theutilitycompany.co" target="_blank" className="hover:text-blue-500 transition-colors">The Utility Company</LinkNext>
+                        </p>
+                    </div>
                     <div className="flex items-center gap-6">
                         <span className="text-[10px] font-mono text-gray-800 uppercase tracking-widest">CODE: SECURE</span>
                         <span className="text-[10px] font-mono text-blue-500/50 uppercase tracking-widest">VER. 2.0.4</span>

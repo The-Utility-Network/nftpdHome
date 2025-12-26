@@ -24,7 +24,7 @@ export default async function ComparisonPage({ params }: Props) {
     }
 
     return (
-        <div className="min-h-screen bg-black text-white selection:bg-utility-red selection:text-white font-sans">
+        <div className="min-h-screen bg-black text-white selection:bg-blue-500 selection:text-white font-sans">
             <Navbar />
 
             <main className="pt-32 pb-24 px-6 max-w-7xl mx-auto">
@@ -37,9 +37,9 @@ export default async function ComparisonPage({ params }: Props) {
                 <div className="grid lg:grid-cols-2 gap-12">
                     {/* Header & Overview */}
                     <div className="lg:col-span-2 text-center mb-8">
-                        <span className="section-heading text-utility-red">HEAD-TO-HEAD</span>
+                        <span className="section-heading text-blue-500">HEAD-TO-HEAD</span>
                         <h1 className="text-5xl md:text-7xl font-bold mt-4 mb-6 leading-tight">
-                            TUC <span className="text-gray-600 px-4 text-4xl align-middle">VS</span> {comparison.competitor}
+                            NFTPD <span className="text-gray-600 px-4 text-4xl align-middle">VS</span> {comparison.competitor}
                         </h1>
                     </div>
 
@@ -71,19 +71,19 @@ export default async function ComparisonPage({ params }: Props) {
                         </div>
                     </div>
 
-                    {/* TUC Advantage Card */}
-                    <div className="glass-panel p-8 rounded-3xl border border-utility-red/30 bg-utility-red/[0.02] shadow-[0_0_50px_rgba(245,64,41,0.1)] relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-utility-red/10 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none" />
+                    {/* NFTPD Advantage Card */}
+                    <div className="glass-panel p-8 rounded-3xl border border-blue-500/30 bg-blue-500/[0.02] shadow-[0_0_50px_rgba(59,130,246,0.1)] relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none" />
 
-                        <h2 className="text-2xl font-bold mb-2 text-white">The Utility Company</h2>
-                        <span className="inline-block px-3 py-1 bg-utility-red/20 rounded-full text-xs text-utility-red mb-6 uppercase tracking-wide">
-                            Neuromimetic Approach
+                        <h2 className="text-2xl font-bold mb-2 text-white">NFTPD Protocol</h2>
+                        <span className="inline-block px-3 py-1 bg-blue-500/20 rounded-full text-xs text-blue-500 mb-6 uppercase tracking-wide">
+                            Proactive Security
                         </span>
                         <p className="text-lg text-white leading-relaxed min-h-[100px]">
-                            {comparison.tucAdvantage}
+                            {comparison.nftpdAdvantage}
                         </p>
-                        <section className="mt-8 pt-6 border-t border-utility-red/20 relative z-10">
-                            <h4 className="text-sm font-bold text-utility-red mb-4 uppercase tracking-widest">The TUC Standard</h4>
+                        <section className="mt-8 pt-6 border-t border-blue-500/20 relative z-10">
+                            <h4 className="text-sm font-bold text-blue-500 mb-4 uppercase tracking-widest">The NFTPD Standard</h4>
                             <ul className="space-y-3 mb-8">
                                 <li className="flex items-start gap-3 text-gray-200">
                                     <span className="text-green-500 mt-1">✓</span>

@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-export const alt = 'NFTPD Philosophical Framework';
+export const alt = 'NFTPD Secured Sectors';
 export const size = { width: 2400, height: 1260 };
 export const contentType = 'image/png';
 
@@ -52,9 +52,9 @@ export default async function Image() {
                     <div style={{ position: 'absolute', inset: 0, border: '2px solid rgba(255,255,255,0.1)', borderRight: 'none', borderRadius: '40px 0 0 40px' }} />
 
                     <div style={{ position: 'relative', fontSize: 60, fontWeight: 700, color: 'white', lineHeight: 0.9, textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', zIndex: 10, textShadow: '0 4px 30px rgba(0,0,0,0.9)' }}>
-                        <span>CREATIVE</span>
-                        <span style={{ color: primaryColor }}>REVOLUTION</span>
-                        <span>MODEL</span>
+                        <span>SECURED</span>
+                        <span style={{ color: primaryColor }}>INDUSTRY</span>
+                        <span>SECTORS</span>
                     </div>
                 </div>
 
@@ -80,8 +80,8 @@ export default async function Image() {
 
                     <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', zIndex: 10 }}>
                         <div style={{ fontSize: 44, color: 'white', fontWeight: 300, lineHeight: 1.2, display: 'flex', flexDirection: 'column', maxWidth: 500, textShadow: '0 4px 30px rgba(0,0,0,0.9)' }}>
-                            <span>Philosophy</span>
-                            <span>Of Identity.</span>
+                            <span>Economies</span>
+                            <span>Protected.</span>
                         </div>
                         <div style={{ marginTop: 20, display: 'flex', flexDirection: 'column', gap: 12, borderLeft: `6px solid ${primaryColor}`, paddingLeft: 30 }}>
                             <span style={{ fontSize: 24, color: '#D1D5DB', letterSpacing: '0.15em', fontWeight: 500, textShadow: '0 2px 10px black' }}>PROTOCOL</span>

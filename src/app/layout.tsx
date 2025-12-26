@@ -20,14 +20,8 @@ export const metadata: Metadata = {
     title: 'NFTPD | Web3 Security Intelligence',
     description: 'The standard for decentralized web security.',
     url: 'https://nftpd.org',
-    siteName: 'NFTPD',
-    images: [
-      {
-        url: 'https://nftpd.org/assets/og-image.jpg',
-        width: 1200,
-        height: 630,
-      },
-    ],
+    siteName: 'NFTPD Protocol',
+    // images: handled automatically by opengraph-image.tsx
     locale: 'en_US',
     type: 'website',
   },
@@ -35,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'NFTPD | Web3 Security Intelligence',
     description: 'Protecting the decentralized web through education and vigilance.',
-    images: ['https://nftpd.org/assets/twitter-image.jpg'],
+    // images: handled automatically by twitter-image.tsx
   },
 };
 

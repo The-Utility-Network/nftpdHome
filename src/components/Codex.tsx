@@ -8,7 +8,7 @@ export default function Codex() {
     return (
         <section id="codex" className="relative py-24 px-6 bg-black">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 text-center md:text-left">
+                <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-8 text-center md:text-left">
                     <div>
                         <span className="text-blue-500 font-mono tracking-[0.2em] text-xs font-bold uppercase">
                             OFFICIAL ACADEMY

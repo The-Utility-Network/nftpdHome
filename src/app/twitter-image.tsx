@@ -6,7 +6,7 @@ export const alt = 'The Utility Company - Industrial Automation as a Service';
 export const size = { width: 2400, height: 1260 };
 export const contentType = 'image/png';
 
-const primaryColor = '#F54029';
+const primaryColor = '#3B82F6'; // NFTPD Blue
 
 export default async function Image() {
     // 1. Hero Background (Base)
@@ -14,7 +14,7 @@ export default async function Image() {
     const bgBase64 = `data:image/jpeg;base64,${bgData.toString('base64')}`;
 
     // 2. Medallion
-    const medallionData = readFileSync(join(process.cwd(), 'public', 'Medallions', 'TUC.png'));
+    const medallionData = readFileSync(join(process.cwd(), 'public', 'Medallions', 'NFTPD.png')); // NFTPD Medallion
     const medallionBase64 = `data:image/png;base64,${medallionData.toString('base64')}`;
 
     return new ImageResponse(
@@ -58,9 +58,9 @@ export default async function Image() {
 
                     {/* Content Layer */}
                     <div style={{ position: 'relative', fontSize: 60, fontWeight: 700, color: 'white', lineHeight: 0.9, textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', zIndex: 10, textShadow: '0 4px 30px rgba(0,0,0,0.9)' }}>
-                        <span>INDUSTRIAL</span>
-                        <span style={{ color: primaryColor }}>AUTOMATION</span>
-                        <span>AS A SERVICE</span>
+                        <span>BLOCKCHAIN</span>
+                        <span style={{ color: primaryColor }}>SECURITY</span>
+                        <span>PROTOCOL</span>
                     </div>
                 </div>
 
@@ -89,12 +89,12 @@ export default async function Image() {
                     {/* Content Layer */}
                     <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', zIndex: 10 }}>
                         <div style={{ fontSize: 44, color: 'white', fontWeight: 300, lineHeight: 1.2, display: 'flex', flexDirection: 'column', maxWidth: 500, textShadow: '0 4px 30px rgba(0,0,0,0.9)' }}>
-                            <span>Simple Choices.</span>
-                            <span>Complex Outcomes.</span>
+                            <span>Global Reach.</span>
+                            <span>Local Enforcement.</span>
                         </div>
                         <div style={{ marginTop: 20, display: 'flex', flexDirection: 'column', gap: 12, borderLeft: `6px solid ${primaryColor}`, paddingLeft: 30 }}>
-                            <span style={{ fontSize: 24, color: '#D1D5DB', letterSpacing: '0.15em', fontWeight: 500, textShadow: '0 2px 10px black' }}>SANTA FE, NM</span>
-                            <span style={{ fontSize: 24, color: primaryColor, letterSpacing: '0.15em', fontWeight: 700, textShadow: '0 2px 10px black' }}>theutilitycompany.co</span>
+                            <span style={{ fontSize: 24, color: '#D1D5DB', letterSpacing: '0.15em', fontWeight: 500, textShadow: '0 2px 10px black' }}>PROTOCOL</span>
+                            <span style={{ fontSize: 24, color: primaryColor, letterSpacing: '0.15em', fontWeight: 700, textShadow: '0 2px 10px black' }}>nftpd.org</span>
                         </div>
                     </div>
                 </div>

@@ -7,6 +7,7 @@ import Mission from '@/components/Mission';
 import SecurityServices from '@/components/SecurityServices';
 import TrainingPrograms from '@/components/TrainingPrograms';
 import SeoLinks from '@/components/SeoLinks';
+import SeoNav from '@/components/SeoNav';
 import CodexPreview from '@/components/CodexPreview';
 
 export default function Home() {
@@ -21,6 +22,8 @@ export default function Home() {
             {/* Interactive Sections */}
             <CodexPreview />
             <TrainingPrograms />
+            <TrainingPrograms />
+            <SeoNav />
             <SeoLinks />
 
             <Footer />
