@@ -17,7 +17,7 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: '#3B82F6', // NFTPD Blue for iOS Dynamic Island
+  viewportFit: 'cover', // Extend into safe area on iOS
 };
 
 export const metadata: Metadata = {
@@ -28,8 +28,13 @@ export const metadata: Metadata = {
   // Apple Web App
   appleWebApp: {
     capable: true,
-    statusBarStyle: 'default',
+    statusBarStyle: 'black-translucent',
     title: 'NFTPD',
+  },
+
+  // iOS theme color
+  other: {
+    'theme-color': '#3B82F6',
   },
 
   openGraph: {
@@ -58,6 +63,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        {/* iOS theme-color meta tags */}
+        <meta name="theme-color" content="#3B82F6" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-white min-h-screen relative`}
         style={{ background: 'radial-gradient(circle at center, #080d1a 0%, #000 100%)' }}
